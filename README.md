@@ -8,6 +8,5 @@ Libraries used:
 - fontawesome-vue (svg icons)
 - vue-js-modal (employee details modal)
 - uuid (random key generation)
-- axios (for http get requests but used local json file instead)
 
-To view all employees submit the search form with no input.
+To view all employees on the Results view either click All Deparrments from Home or in the Results view submit the search form with no input.
