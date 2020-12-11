@@ -40,12 +40,16 @@ export default {
     },
     filterByDepartment(department) {
       var directory = results.results;
+
       var filteredDirectory;
       if (department.name == 'All Departments') {
         filteredDirectory = directory;
       } else {
-        filteredDirectory = directory.filter(employee => { return employee.department.toLowerCase().includes(department.name.toLowerCase()) });
+        filteredDirectory = directory.filter(employee => { 
+          return employee.department.toLowerCase().includes(department.name.toLowerCase()) 
+        });
       }
+      
       this.$router.push({ name: 'Results', params: { outsideResults: filteredDirectory } });
     }
   }

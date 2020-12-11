@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Header />
     <vue-page-transition name="fade">
       <router-view/>
     </vue-page-transition>
@@ -8,13 +7,8 @@
 </template>
 
 <script>
-import Header from "./components/layout/Header";
-
 export default {
   name: "App",
-  components: {
-    Header
-  }
 }
 </script>
 
@@ -33,7 +27,7 @@ ul.is-horizontal.block li {
   display: inline-block;
 }
 
-/* Redundant but this fixes not having 'inline-list item' for all browsers */
+/* Redundant but this fixes not having 'inline-list item' that is not suppored for all browsers. */
 ul.is-horizontal.seperated li {
   display: inline-block;
 }

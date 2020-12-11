@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      nameFilterResults: [],
+      nameFilterResults: [],  // This is to store initial name search results and then used to filter by departments.
       searchResults: [],
       departments: [],
       filteredDepartment: {
@@ -56,7 +56,9 @@ export default {
       if (this.filteredDepartment.name == 'All Departments') {
         this.searchResults = searchData.results;
       } else {
-        this.searchResults = searchData.results.filter(employee => { return employee.department.toLowerCase().includes(this.filteredDepartment.name.toLowerCase()) });
+        this.searchResults = searchData.results.filter(employee => { 
+          return employee.department.toLowerCase().includes(this.filteredDepartment.name.toLowerCase()) 
+        });
       }
     },
     applyFilter(department) {
@@ -65,7 +67,9 @@ export default {
       if (department.name == 'All Departments') {
         this.searchResults = this.nameFilterResults;
       } else {
-        this.searchResults = this.nameFilterResults.filter(employee => { return employee.department.toLowerCase().includes(department.name.toLowerCase()) });
+        this.searchResults = this.nameFilterResults.filter(employee => { 
+          return employee.department.toLowerCase().includes(department.name.toLowerCase()) 
+          });
       }
     }
   },
