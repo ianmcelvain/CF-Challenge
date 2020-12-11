@@ -4,7 +4,7 @@
             <b-col lg="8" offset-lg="2">
                 <form @submit="searchDirectory">
                     <div>
-                    <input type="text" name="name" :placeholder="searchPlaceholderString" v-model="name">
+                    <input type="text" name="name" placeholder="Search for employee..." v-model="name">
                     <fa-icon class="icon search-icon" icon="search" />
                     </div>
                 </form>
@@ -24,12 +24,6 @@ export default {
             directory: results.results,
         }
     },
-    props: {
-        searchedName: {
-            type: String,
-            default: ''
-        }
-    },
     methods: {
         searchDirectory(e) {
             e.preventDefault();
@@ -42,11 +36,6 @@ export default {
             }
 
             this.$emit('query-search', searchData);
-        }
-    },
-    computed: {
-        searchPlaceholderString() {
-            return this.searchedName == '' ? 'Search for employee...' : this.searchedName;
         }
     }
 }
