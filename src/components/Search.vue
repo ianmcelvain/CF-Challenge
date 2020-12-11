@@ -55,6 +55,7 @@ export default {
 <style scoped>
 input[type=text]{
     box-sizing: content-box;
+    width: 280px;
     position: relative;
     padding: 15px 40px 15px 20px;
     text-transform: uppercase;

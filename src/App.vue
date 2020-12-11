@@ -33,10 +33,15 @@ ul.is-horizontal.block li {
   display: inline-block;
 }
 
+/* Redundant but this fixes not having 'inline-list item' for all browsers */
 ul.is-horizontal.seperated li {
-  display: inline list-item;
+  display: inline-block;
 }
 
+ul.is-horizontal.seperated li:before {
+  content: '\ffed';
+  margin-right: 0.5em;
+}
 
 #app {
   font-family: 'Montserrat', sans-serif;
@@ -118,13 +123,7 @@ ul.is-horizontal.seperated li {
   }
 }
 
-@media (max-width: 700px) {
-  ul.is-horizontal.collapsable li {
-    display: block !important;
-  }
-}
-
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .search-icon {
     display: none !important;
   }
