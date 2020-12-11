@@ -28,7 +28,10 @@ export default {
         searchDirectory(e) {
             e.preventDefault();
             
-            var results = this.directory.filter(employee => { return employee.name.first.toLowerCase().includes(this.name.toLowerCase()) });
+            var results = this.directory.filter(employee => { 
+                var fullName = employee.name.first + ' ' + employee.name.last;
+                return fullName.toLowerCase().includes(this.name.toLowerCase())
+            });
             
             var searchData = {
                 searchedName: this.name,
