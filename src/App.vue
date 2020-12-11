@@ -103,6 +103,7 @@ ul.is-horizontal.seperated li:before {
   color: white !important;
   background-color: rgba(0, 0, 0, 0) !important;
   border: 2px solid #DFA928 !important;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.201) !important;
 }
 
 .btn-secondary:hover {
