@@ -1,7 +1,5 @@
 # :pencil2: CF Interview Challenge
 
-Deployed site: [https://ianmcelvain.github.io/CF-Challenge/](https://ianmcelvain.github.io/CF-Challenge/)
-
 Libraries used:
 
 - boostrap-vue (responsive grid)
