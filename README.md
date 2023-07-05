@@ -7,4 +7,4 @@ Libraries used:
 - vue-js-modal (employee details modal)
 - uuid (random key generation)
 
-To view all employees on the Results view either click All Deparrments from Home or in the Results view submit the search form with no input.
+To view all employees on the Results view either click All Departments from Home or in the Results view submit the search form with no input.
