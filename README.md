@@ -19,4 +19,9 @@ npm run serve
 - vue-js-modal (employee details modal)
 - uuid (random key generation)
 
+## Spec
+<img width="425" alt="image" src="https://github.com/ianmcelvain/cf-challenge/assets/45335671/662dff85-decd-4b68-87bd-5ddc366b28f6">
+
+
+
 To view all employees on the Results view either click All Departments from Home or in the Results view submit the search form with no input.
