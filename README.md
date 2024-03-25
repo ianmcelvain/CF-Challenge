@@ -1,5 +1,6 @@
 # :pencil2: CF Interview Challenge
 A simple employee registry page going off of a JSON file to mimic API data.
+https://ianmcelvain.github.io/cf-challenge/
 
 ## Supported node/npm
 - Node: 14.x
