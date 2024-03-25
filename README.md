@@ -1,6 +1,17 @@
 # :pencil2: CF Interview Challenge
+A simple employee registry page going off of a JSON file to mimic API data.
 
-Libraries used:
+## Supported node/npm
+- Node: 14.x
+- NPM: 6.x
+
+## Usage
+```
+npm install
+npm run serve
+```
+
+## Libraries
 
 - boostrap-vue (responsive grid)
 - fontawesome-vue (svg icons)
